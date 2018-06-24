@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>F2E-W3-AdminOrder</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+<div id="header">
+  <div class="container">
+    <div class="logo">
+      <p class="white">Shoptime</p>
+    </div>
+    <div class="menu">
+      <a href="" class="white">HOME</a>
+      <a href="" class="white">ORDERS</a>
+      <a href="" class="white">PRODUCT</a>
+    </div>
+    <div class="admin">
+      <p class="white">ADMIN</p>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div class="container">
+    <div class="info1">
+      <div class="left">
+        <p>OVERVIEW</p>
+      </div>
+      <div class="right">
+        <div class="date">
+          <p>2018/6/6</p>
+          <i class="fa fa-caret-right" aria-hidden="true"></i>
+          <p>2018/6/13</p>
+        </div>
+        <div class="freq">
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+          <p>Weekly</p>
+        </div>
+      </div>
+    </div>
+    <div class="overview">
+      <div class="num3">
+        <div class="num3_content">
+          <div class="subtitle">TOTAL REVENUE</div>
+          <b class="green">54540</b>
+        </div>
+      </div>
+      <div class="num3">
+        <div class="num3_content">
+          <div class="subtitle">TOTAL COST</div>
+          <b class="red">12660</b>
+        </div>
+      </div>
+      <div class="num3">
+        <div class="num3_content">
+          <div class="subtitle">NET INCOME</div>
+          <b class="blue">41880</b>
+        </div>
+      </div>
+    </div>
+    <div class="info2">
+      <div class="activity">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Year', 'Revenue', 'Cost', 'Net Income'],
+              ['6 Jun',  1000,      400, 600],
+              ['7 Jun',  1170,      460, 700],
+              ['8 Jun',  660,       1120, 420],
+              ['9 Jun',  660,       1120, 580],
+              ['10 Jun',  660,       1120, 760],
+              ['11 Jun',  660,       1120, 1030],
+              ['12 Jun',  660,       1120, 840],
+              ['13 Jun',  1030,      540, 960]
+            ]);
+
+            var options = {
+              title: 'Activity',
+              curveType: 'function',
+              legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+            chart.draw(data, options);
+          }
+        </script>
+        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+      </div>
+    </div>
+    <div class="info3">
+      <div class="num2">
+        <div class="transation">
+          <b>Transation Website</b>
+          <div class="r4">
+            <img src="#" class="c1" alt="50*50">
+            <div class="c2">
+              Facebook.com
+            </div>
+            <div class="c3 green">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
+            <div class="c4 green">
+              20%
+            </div>
+          </div>
+          <div class="r4">
+            <img src="#" class="c1" alt="50*50">
+            <div class="c2">
+              google.com
+            </div>
+            <div class="c3 green">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
+            <div class="c4 green">
+              12%
+            </div>
+          </div>
+          <div class="r4">
+            <img src="#" class="c1" alt="50*50">
+            <div class="c2">
+              Shopify.com
+            </div>
+            <div class="c3 red">
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </div>
+            <div class="c4 red">
+              15%
+            </div>
+          </div>
+          <div class="r4">
+            <img src="#" class="c1" alt="50*50">
+            <div class="c2">
+              Wordpress.com
+            </div>
+            <div class="c3 red">
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </div>
+            <div class="c4 red">
+              30%
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="num2">
+        <div class="orders">
+          <b>Latest Orders</b>
+          <div class="r3">
+            <div class="r12">
+              <div class="f1">
+                Vintage T-shirt
+              </div>
+              <div class="f2">
+                2018/6/13  13:42
+              </div>
+              <div class="f3">
+                Belle Willis
+              </div>
+            </div>
+          </div>
+          <div class="r3">
+            <div class="r12">
+              <div class="f1">
+                Cowboy Jacket
+              </div>
+              <div class="f2">
+                2018/6/13  10:45
+              </div>
+              <div class="f3">
+                Adrian Cummings
+              </div>
+            </div>
+          </div>
+          <div class="r3">
+            <div class="r12">
+              <div class="f1">
+                Coach Coat
+              </div>
+              <div class="f2">
+                2018/6/13  8:26
+              </div>
+              <div class="f3">
+                Lura Holland
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+</body>
+
+</html>
